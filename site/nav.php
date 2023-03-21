@@ -6,20 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
-    <title>De ReceptenboekApp</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <section>
-                <img class="logo" src="images/recipe-by-dall-e.png" alt="foto">
-            </section>
-            <?php
-            include("nav.php");
-            ?>
-        </div>
-    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="">eerste link</a>
+            </li>
+            <li>
+                <a href="">tweede link</a>
+            </li>
+            <li>
+                <a href="">derde link</a>
+            </li>
+        </ul>
+    </nav>
 </body>
 
 </html>
