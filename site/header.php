@@ -12,9 +12,9 @@
 <body>
     <header>
         <div class="container">
-            <section>
-                <img class="logo" src="images/recipe-by-dall-e.png" alt="foto">
-            </section>
+            <img class="logo" src="images/recipe-by-dall-e.png" alt="foto">
+            <h2 class="titel">De receptenboekApp</h2>
+
             <?php
             include("nav.php");
             ?>

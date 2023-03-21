@@ -1,19 +1,22 @@
 *{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* margin 0 0 is ervoor om de browser de automatische margin waarde te laten verranderen */
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: green;
-    /* margin 0 is ervoor om de browser de automatische margin waarde te laten verranderen */
-    margin: 0;
 }
 
 /* header.php css */
 header{
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 100%;
     background-color: rgb(140, 0, 0);
 }
 
@@ -23,7 +26,7 @@ header{
     margin: 0 auto;
     width: 90%;
 
-    /* border: 2px solid rgb(255, 140, 0); */
+    border: 2px solid rgb(255, 140, 0);
 }
 
 .logo{
@@ -35,14 +38,17 @@ header{
     /* mix-blend-mode:; */
 }
 
+.titel{
+    align-self: center;
+    border: 2px solid rgb(255, 140, 0);
+}
+
 /* nav.php css*/
 nav{
     display: flex;
     justify-content:flex-end;
-    width: 90%;
-    align-self: center;
     
-    /* border: 2px solid rgb(255, 140, 0); */
+    border: 2px solid rgb(255, 140, 0);
 }
 
 nav ul{
