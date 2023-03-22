@@ -1,3 +1,4 @@
+/* css for multiple pages */
 *{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -9,14 +10,6 @@
 
 body{
     background-color: green;
-}
-
-/* header.php css */
-header{
-    height: 70px;
-    width: 100%;
-    background-color: rgb(140, 0, 0);
-    margin-bottom: 30px;
 }
 
 .container{
@@ -31,6 +24,21 @@ header{
     display:flex; 
     flex-direction:column; 
     justify-content:space-between;
+}
+
+.white_block{
+    min-height: 40vh;
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* header.php css */
+header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(140, 0, 0);
+    margin-bottom: 30px;
 }
 
 .header_align{
@@ -93,13 +101,6 @@ nav ul a:hover{
 }
 
 /* home.php css */
-.white_blok{
-    min-height: 40vh;
-    background-color: rgb(204, 204, 204);
-    border-radius: 20px;
-    padding: 20px;
-}
-
 .tekst_titel{
     border-bottom: 2px solid goldenrod;
 }
@@ -127,8 +128,7 @@ nav ul a:hover{
     justify-self: flex-end;
     max-height: 100%;
     max-width: 40%;
-    mix-blend-mode:multiply;
-    flex-shrink: inherit;
+    mix-blend-mode: multiply;
     margin: 10px;
 
     /* border: 2px solid goldenrod; */
@@ -137,6 +137,42 @@ nav ul a:hover{
 .image_container img{
     max-width: 100%;
     height: auto;
+}
+
+/* recepten.php css */
+.recept_catagory{
+    padding: 0 5vw;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    /* text-transform: capitalize; */
+}
+.cards_container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+
+.card{
+    flex: 0 0 auto;
+    width: 320px;
+    /* border-radius: 25px; */
+    margin: 10px;
+    background-color: rgb(204, 149, 0);
+}
+
+.card h2{
+    max-width: 100%;
+}
+
+.card img{
+    max-height: 320px;
+    max-width: 320px;
 }
 
 /* footer.php css */
@@ -154,4 +190,5 @@ footer{
 
 .copyright_tekst{
     padding: 25px;
+    color: rgb(204, 204, 204);
 }
