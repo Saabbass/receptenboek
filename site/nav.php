@@ -12,13 +12,13 @@
     <nav>
         <ul>
             <li>
-                <a href="">eerste link</a>
+                <a href="home.php">home</a>
             </li>
             <li>
-                <a href="">tweede link</a>
+                <a href="recepten.php">recepten</a>
             </li>
             <li>
-                <a href="">derde link</a>
+                <a href="specials.php">specials</a>
             </li>
         </ul>
     </nav>

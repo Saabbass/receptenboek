@@ -9,18 +9,15 @@
 </head>
 
 <body>
-    <header>
+    <footer>
         <div class="container">
-            <div class="header_align">
-                <img class="logo" src="images/recipe-by-dall-e.png" alt="foto">
-                <h2 class="titel">⭐De receptenboekApp</h2>
-    
-                <?php
-                include("nav.php");
-                ?>
+            <div class="copyright_tekst">
+                <p>
+                    &copy; 2023 My Website. All Rights Reserved
+                </p>
             </div>
         </div>
-    </header>
+    </footer>
 </body>
 
 </html>
