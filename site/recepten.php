@@ -29,19 +29,20 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <div class="container">
         <div class="page_height">
             <div class="white_block">
-                <div class="recept_catagory">
+                <h2 class="recept_catagory">Onze recepten</h2>
+                <div class="recept_container">
                     <section class="cards_container">
                         <?php foreach($recepten as $recept):?>
-                        <div class="cards">
                             <a href="recept.php">
                                 <div class="card">
-                                    <img src="images/<?php echo $recept['afbeelding']?>" alt="">
+                                    <div class="card_image">
+                                        <img class="card_img" src="images/<?php echo $recept['afbeelding']?>" alt="">
+                                    </div>
                                     <h2>
                                         <?php echo $recept['titel']?>
                                     </h2>
                                 </div>
                             </a>
-                        </div>
                         <?php endforeach;?>
                     </section>
                 </div>
