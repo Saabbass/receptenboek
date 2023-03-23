@@ -159,6 +159,9 @@ nav ul a:hover{
 .cards_container a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 15px;
 }
 
 .cards_container a:hover{
@@ -172,6 +175,7 @@ nav ul a:hover{
     /* border-radius: 25px; */
     margin: 10px;
     background-color: rgb(204, 149, 0);
+    border-radius: 5px;
 }
 
 .card_image{
@@ -187,6 +191,7 @@ nav ul a:hover{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .card h2{
@@ -199,6 +204,10 @@ nav ul a:hover{
     text-transform: capitalize;
 }
 
+/* recept.php css */
+.recept_text{
+    line-height: 28px;
+}
 
 /* footer.php css */
 footer{

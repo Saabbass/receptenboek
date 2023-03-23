@@ -49,8 +49,23 @@ $recept = mysqli_fetch_assoc($result);
                     </div>
                     <div class="tekst_container">
                         <div class="tekst">
-                            <p>
-                                <?php echo $recept['werkwijze'] ?>
+                            <p class="recept_text">
+                                -Behoort tot: <?php echo $recept['keuken'] ?>
+                            </p>
+                            <p class="recept_text">
+                                -Hoeveelheid ingrediënten: <?php echo $recept['aantal-ingredienten'] ?>
+                            </p>
+                            <p class="recept_text">
+                                -Geschatte bereidingsduur: <?php echo $recept['bereidingsduur'] ?> minuten
+                            </p>
+                            <p class="recept_text">
+                                -Menugang: <?php echo $recept['menugang'] ?>
+                            </p>
+                            <p class="recept_text">
+                                -Moeilijkheidsniveau: <?php echo $recept['niveau'] ?>
+                            </p>
+                            <p class="recept_text">
+                                -Werkwijze: <?php echo $recept['werkwijze'] ?>
                             </p>
                         </div>
 

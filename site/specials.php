@@ -1,3 +1,15 @@
+<?php
+session_start();
+require 'database.php';
+
+$sql = "SELECT recept_id, titel, afbeelding FROM receptenboek";
+
+$result = mysqli_query($conn, $sql);
+
+$recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="nl - NL">
 
@@ -13,16 +25,28 @@
     <?php
     include("header.php");
     ?>
-    
+
     <div class="container">
         <div class="page_height">
-            <section class="cards_container">
-                <div class="cards">
-                    <div class="card">
-                        
-                    </div>
+            <div class="white_block">
+                <h2 class="recept_catagory">Onze recepten</h2>
+                <div class="recept_container">
+                    <section class="cards_container">
+                        <?php foreach($recepten as $recept):?>
+                            <a href="recept.php?id=<?php echo $recept['recept_id']?>">
+                                <div class="card">
+                                    <div class="card_image">
+                                        <img class="card_img" src="images/<?php echo $recept['afbeelding']?>" alt="">
+                                    </div>
+                                    <h2>
+                                        <?php echo $recept['titel']?>
+                                    </h2>
+                                </div>
+                            </a>
+                        <?php endforeach;?>
+                    </section>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
 

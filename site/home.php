@@ -18,7 +18,10 @@
         <div class="page_height">
             <section class="white_block">
                 <div class="tekst_titel">
-                    <h2>Welkom bij de receptenboekApp</h2>
+                    <h2>
+                        “Een heerlijk en gezellig diner
+                        Begint met het receptenboek ÈPICER"
+                    </h2>
                 </div>
                 <div class="tekst_container">
                     <div class="tekst">
