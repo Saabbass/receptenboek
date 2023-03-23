@@ -12,7 +12,7 @@
     <nav>
         <ul>
             <li>
-                <a href="home.php">home</a>
+                <a href="index.php">home</a>
             </li>
             <li>
                 <a href="recepten.php">recepten</a>

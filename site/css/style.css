@@ -205,6 +205,16 @@ nav ul a:hover{
 }
 
 /* recept.php css */
+.recept_orderd{
+    padding: 0 5vw;
+    font-size: 30px;
+    /* font-weight: 500; */
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    border-bottom: 2px solid goldenrod;
+}
+
 .recept_text{
     line-height: 28px;
 }

@@ -2,11 +2,25 @@
 session_start();
 require 'database.php';
 
-$sql = "SELECT recept_id, titel, afbeelding FROM receptenboek";
+// $sql1 = "SELECT MAX(bereidingsduur), recept_id, titel, afbeelding FROM receptenboek ";
+$sql1 = "SELECT * FROM receptenboek WHERE bereidingsduur = (SELECT MAX(bereidingsduur) FROM receptenboek)";
 
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($conn, $sql1);
 
-$recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
+$recepten_maxtime = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+
+$sql2 = "SELECT recept_id, titel, afbeelding FROM receptenboek WHERE niveau = 'makkelijk'";
+
+$result = mysqli_query($conn, $sql2);
+
+$recepten_easy = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+$sql3 = "SELECT * FROM receptenboek WHERE aantal_ingredienten = (SELECT MAX(aantal_ingredienten) FROM receptenboek)";
+
+$result = mysqli_query($conn, $sql3);
+
+$recepten_maxingredients = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
 
@@ -29,17 +43,51 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <div class="container">
         <div class="page_height">
             <div class="white_block">
-                <h2 class="recept_catagory">Onze recepten</h2>
+                <h2 class="recept_orderd">De recepten met de langste bereidingsduur</h2>
                 <div class="recept_container">
                     <section class="cards_container">
-                        <?php foreach($recepten as $recept):?>
-                            <a href="recept.php?id=<?php echo $recept['recept_id']?>">
+                        <?php foreach($recepten_maxtime as $rmaxtime):?>
+                            <a href="recept.php?id=<?php echo $rmaxtime['recept_id']?>">
                                 <div class="card">
                                     <div class="card_image">
-                                        <img class="card_img" src="images/<?php echo $recept['afbeelding']?>" alt="">
+                                        <img class="card_img" src="images/<?php echo $rmaxtime['afbeelding']?>" alt="">
                                     </div>
                                     <h2>
-                                        <?php echo $recept['titel']?>
+                                        <?php echo $rmaxtime['titel']?>
+                                    </h2>
+                                </div>
+                            </a>
+                        <?php endforeach;?>
+                    </section>
+                </div>
+                <h2 class="recept_orderd">De makkelijkste recepten</h2>
+                <div class="recept_container">
+                    <section class="cards_container">
+                        <?php foreach($recepten_easy as $reasy):?>
+                            <a href="recept.php?id=<?php echo $reasy['recept_id']?>">
+                                <div class="card">
+                                    <div class="card_image">
+                                        <img class="card_img" src="images/<?php echo $reasy['afbeelding']?>" alt="">
+                                    </div>
+                                    <h2>
+                                        <?php echo $reasy['titel']?>
+                                    </h2>
+                                </div>
+                            </a>
+                        <?php endforeach;?>
+                    </section>
+                </div>
+                <h2 class="recept_orderd">De recepten met de meeste ingrediënten</h2>
+                <div class="recept_container">
+                    <section class="cards_container">
+                        <?php foreach($recepten_maxingredients as $rmax):?>
+                            <a href="recept.php?id=<?php echo $rmax['recept_id']?>">
+                                <div class="card">
+                                    <div class="card_image">
+                                        <img class="card_img" src="images/<?php echo $rmax['afbeelding']?>" alt="">
+                                    </div>
+                                    <h2>
+                                        <?php echo $rmax['titel']?>
                                     </h2>
                                 </div>
                             </a>

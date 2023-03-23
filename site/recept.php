@@ -53,7 +53,7 @@ $recept = mysqli_fetch_assoc($result);
                                 -Behoort tot: <?php echo $recept['keuken'] ?>
                             </p>
                             <p class="recept_text">
-                                -Hoeveelheid ingrediënten: <?php echo $recept['aantal-ingredienten'] ?>
+                                -Hoeveelheid ingrediënten: <?php echo $recept['aantal_ingredienten'] ?>
                             </p>
                             <p class="recept_text">
                                 -Geschatte bereidingsduur: <?php echo $recept['bereidingsduur'] ?> minuten
