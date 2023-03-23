@@ -149,19 +149,26 @@ nav ul a:hover{
 
     border-bottom: 2px solid goldenrod;
 }
+
 .cards_container{
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
 }
+
 .cards_container a{
     text-decoration: none;
     color: black;
 }
 
+.cards_container a:hover{
+    transform: scale(1.02) perspective(0px);
+    box-shadow: 0 10px 20px goldenrod;
+}
+
 .card{
     flex: 0 0 auto;
-    width: 320px;
+    width: 311px;
     /* border-radius: 25px; */
     margin: 10px;
     background-color: rgb(204, 149, 0);
@@ -189,6 +196,7 @@ nav ul a:hover{
     font-size: 22px;
     font-weight: 500;
     color: #000000;
+    text-transform: capitalize;
 }
 
 

@@ -2,7 +2,7 @@
 session_start();
 require 'database.php';
 
-$sql = "SELECT gerecht_id, titel, afbeelding FROM receptenboek";
+$sql = "SELECT recept_id, titel, afbeelding FROM receptenboek";
 
 $result = mysqli_query($conn, $sql);
 
@@ -33,7 +33,7 @@ $recepten = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 <div class="recept_container">
                     <section class="cards_container">
                         <?php foreach($recepten as $recept):?>
-                            <a href="recept.php">
+                            <a href="recept.php?id=<?php echo $recept['recept_id']?>">
                                 <div class="card">
                                     <div class="card_image">
                                         <img class="card_img" src="images/<?php echo $recept['afbeelding']?>" alt="">

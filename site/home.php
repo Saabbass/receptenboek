@@ -41,7 +41,9 @@
                         </p>
                     </div>
 
-                    <div class="image_container"><img src="images/recipe-by-dall-e.png" alt=""></div>
+                    <div class="image_container">
+                        <img src="images/recipe-by-dall-e.png" alt="">
+                    </div>
                 </div>
             </section>
         </div>
