@@ -34,14 +34,6 @@
                         <p>
                             Maecenas dictum mi nec ex mattis ultricies. Curabitur imperdiet at justo nec feugiat. Sed commodo lacus id est blandit pellentesque. Nam ut dui tincidunt, malesuada nisi ac, efficitur ex. Cras a est ut nisi lacinia condimentum. Suspendisse tincidunt enim arcu, ac consequat sapien convallis non. Nam in orci et nunc fermentum euismod non id est. Fusce facilisis posuere ligula nec congue. Pellentesque eros orci, luctus non eros ut, gravida tincidunt arcu. Ut ut auctor risus. Aliquam sit amet ipsum vitae lectus sodales porta vitae sed augue.
                         </p>
-                        <p>
-                            Vestibulum commodo, felis ac dignissim rhoncus, odio nulla bibendum elit, sit amet hendrerit nunc odio sodales urna. Nullam ultrices lacus sed mi gravida, eu pulvinar felis rhoncus. Praesent condimentum vulputate est eu fermentum. Ut blandit erat at felis porttitor commodo. Sed sed fringilla felis. Nunc faucibus purus eget semper dapibus. Vivamus ut placerat odio. Vestibulum quis quam velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        </p>
-                        <p>
-
-                            Vestibulum ante nisi, feugiat convallis mattis in, dignissim id orci. Curabitur sit amet lacinia est. Pellentesque in arcu luctus, fermentum urna sit amet, imperdiet arcu. Phasellus iaculis interdum diam, ut mollis est dapibus non. Nulla ut purus at augue commodo tristique id et metus. Phasellus maximus magna eget sollicitudin gravida. Ut sed pretium enim. Nunc imperdiet quam non leo malesuada, quis condimentum lectus posuere. Nam semper mauris in massa auctor, non feugiat mi faucibus. Ut quis pulvinar felis. Mauris nec velit diam. Vivamus neque nisi, egestas tempor ligula vel, gravida scelerisque ligula. Mauris dapibus neque aliquam, accumsan elit eu, eleifend erat. Proin ac turpis sodales, porttitor augue sed, scelerisque libero. Sed sem nibh, pulvinar id urna bibendum, commodo porttitor odio.
-
-                        </p>
                     </div>
 
                     <div class="image_container">
