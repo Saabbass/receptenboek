@@ -62,8 +62,9 @@ $recepten_maxingredients = mysqli_fetch_all($result, MYSQLI_ASSOC);
                         <?php endforeach;?>
                     </section>
                 </div>
-                
+
                 <h2 class="recept_orderd">De makkelijkste recepten</h2>
+                
                 <div class="recept_container">
                     <section class="cards_container">
                         <?php foreach($recepten_easy as $reasy):?>
