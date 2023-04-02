@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require 'database.php';
 
 // $sql1 = "SELECT MAX(bereidingsduur), recept_id, titel, afbeelding FROM receptenboek ";
