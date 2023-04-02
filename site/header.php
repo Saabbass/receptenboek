@@ -30,6 +30,7 @@ $receptCount = mysqli_fetch_assoc($result);
                 <?php
                 include("nav.php");
                 ?>
+                
             </div>
         </div>
     </header>
