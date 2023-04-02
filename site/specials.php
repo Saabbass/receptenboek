@@ -48,18 +48,18 @@ $recepten_maxingredients = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 <h2 class="recept_orderd">De recepten met de langste bereidingsduur</h2>
                 <div class="recept_container">
                     <section class="cards_container">
-                        <?php foreach($recepten_maxtime as $rmaxtime):?>
-                            <a href="recept.php?id=<?php echo $rmaxtime['recept_id']?>">
+                        <?php foreach ($recepten_maxtime as $rmaxtime) : ?>
+                            <a href="recept.php?id=<?php echo $rmaxtime['recept_id'] ?>">
                                 <div class="card">
                                     <div class="card_image">
-                                        <img class="card_img" src="images/<?php echo $rmaxtime['afbeelding']?>" alt="">
+                                        <img class="card_img" src="images/<?php echo $rmaxtime['afbeelding'] ?>" alt="">
                                     </div>
                                     <h2>
-                                        <?php echo $rmaxtime['titel']?>
+                                        <?php echo $rmaxtime['titel'] ?>
                                     </h2>
                                 </div>
                             </a>
-                        <?php endforeach;?>
+                        <?php endforeach; ?>
                     </section>
                 </div>
 
@@ -67,37 +67,37 @@ $recepten_maxingredients = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
                 <div class="recept_container">
                     <section class="cards_container">
-                        <?php foreach($recepten_easy as $reasy):?>
-                            <a href="recept.php?id=<?php echo $reasy['recept_id']?>">
+                        <?php foreach ($recepten_easy as $reasy) : ?>
+                            <a href="recept.php?id=<?php echo $reasy['recept_id'] ?>">
                                 <div class="card">
                                     <div class="card_image">
-                                        <img class="card_img" src="images/<?php echo $reasy['afbeelding']?>" alt="">
+                                        <img class="card_img" src="images/<?php echo $reasy['afbeelding'] ?>" alt="">
                                     </div>
                                     <h2>
-                                        <?php echo $reasy['titel']?>
+                                        <?php echo $reasy['titel'] ?>
                                     </h2>
                                 </div>
                             </a>
-                        <?php endforeach;?>
+                        <?php endforeach; ?>
                     </section>
                 </div>
 
                 <h2 class="recept_orderd">De recepten met de meeste ingrediënten</h2>
-                
+
                 <div class="recept_container">
                     <section class="cards_container">
-                        <?php foreach($recepten_maxingredients as $rmax):?>
-                            <a href="recept.php?id=<?php echo $rmax['recept_id']?>">
+                        <?php foreach ($recepten_maxingredients as $rmax) : ?>
+                            <a href="recept.php?id=<?php echo $rmax['recept_id'] ?>">
                                 <div class="card">
                                     <div class="card_image">
-                                        <img class="card_img" src="images/<?php echo $rmax['afbeelding']?>" alt="">
+                                        <img class="card_img" src="images/<?php echo $rmax['afbeelding'] ?>" alt="">
                                     </div>
                                     <h2>
-                                        <?php echo $rmax['titel']?>
+                                        <?php echo $rmax['titel'] ?>
                                     </h2>
                                 </div>
                             </a>
-                        <?php endforeach;?>
+                        <?php endforeach; ?>
                     </section>
                 </div>
             </div>
@@ -107,6 +107,7 @@ $recepten_maxingredients = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <?php
     include("footer.php");
     ?>
+
 </body>
 
 </html>
