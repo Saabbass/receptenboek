@@ -37,6 +37,7 @@ $recepten_maxingredients = mysqli_fetch_all($result, MYSQLI_ASSOC);
 </head>
 
 <body>
+    
     <?php
     include("header.php");
     ?>
