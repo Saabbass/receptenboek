@@ -15,7 +15,7 @@
                 <p>
                     &copy; 2023 My Website. All Rights Reserved
                 </p>
-                <p>tekst</p>
+                <p>..</p>
             </div>
         </div>
     </footer>
