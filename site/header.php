@@ -24,7 +24,7 @@ $receptCount = mysqli_fetch_assoc($result);
         <div class="container">
             <div class="header_align">
                 <img class="logo" src="images/recipe-by-dall-e.png" alt="foto">
-                <h2 class="titel">⭐De receptenboekApp </h2>
+                <h2 class="titel">⭐De receptenboekApp - Surinaamse keuken </h2>
                 <h2 class="titel">Hoeveelheid recepten: <?php echo $receptCount['total'];?> </h2>
     
                 <?php
